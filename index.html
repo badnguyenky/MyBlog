@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
     <link rel="stylesheet" href="vendors/css/simple-grid.css">
     <script src="https://kit.fontawesome.com/0d882e9156.js"></script>
-    <title>KYLE</title>
+    <title>KYLESB | My Blog</title>
 </head>
-<body>
-    <header>
-        <img src="./resources/img/logo.png" alt="logo" class="logo">
-        <ul class="main-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
 
-        </ul>
+<body>
+    <header id="home">
+        <nav>
+            <a href="#home"><img src="./resources/img/logo.png" alt="logo" class="logo"></a>
+            <ul class="main-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">Info</a></li>
+                <li><a href="#section3">Contact</a></li>
+
+            </ul>
+        </nav>
         <div class="clearfix"></div>
         <div class="main-text">
-            <h3 class="header-title" >Welcome</h3>
+            <h3 class="header-title">Welcome</h3>
             <h1 class="slogan">Skateboarding saves my life</h1>
-            <div class="social">
-                <a href="http://www.facebook.com/ky.nguyen.99"> <img class="fb" src="./resources/img/facebook.png" alt="facebook logo"></a>
-                <a href="https://www.instagram.com/_.kylesb._/"><img class="ig" src="./resources/img/instagram.png" alt="instagram logo"></a>
-                <a href="#"><img class="tw" src="./resources/img/twitter.png" alt="twitter logo"></a>
-                <a href="#"><img class="gg" src="./resources/img/google.png" alt=""></a>
-            </div>
+            <ul class="social">
+                <li><a href="http://www.facebook.com/ky.nguyen.99"> <img class="social-logo"
+                            src="./resources/img/facebook.png" alt="facebook logo"></a></li>
+                <li><a href="https://www.instagram.com/_.kylesb._/"><img class="social-logo"
+                            src="./resources/img/instagram.png" alt="instagram logo"></a></li>
+                <li><a href="#"><img class="social-logo" src="./resources/img/twitter.png" alt="twitter logo"></a></li>
+                <li><a href="#"><img class="social-logo" src="./resources/img/google.png" alt=""></a></li>
+            </ul>
         </div>
     </header>
-    <section class="about-section">
+    <section class="about-section" id="section1">
         <div class="row">
             <div class="col-6 about-picture">
                 <img class="avatar" src="resources/img/avatar.jpg" alt="avatar">
             </div>
             <div class="col-6">
                 <img class="hello" src="resources/img/hello.png" alt="hello">
-                <h2 class="about-me-title">I'm Kyle <p>Web Developer & Skater</p></h2>
+                <h2 class="about-me-title">
+                    <span class="text-sub1">I'm</span>
+                    <span>Kyle</span> <br>
+                    <span class="text-sub2">Web Developer & Skater</span>
+                    </p>
+                </h2>
                 <p class="p-long">Lúc mới học cái gì cũng khó nhưng có đam mê bạn sẽ vượt qua và giỏi dần lên. <br> <br>
                     Từ cuối năm 2017 đến nay mình chơi trượt ván tại Thái Nguyên và Tuyên Quang.
-                    Giữa mùa hè năm 2019, mình bắt đầu gõ những dòng HTML và CSS đầu tiên trên VS Code Studio. 
-                    Tự học lập trình Web, mình từng trải qua nhiều khoảnh khắc khó khăn của người tự học. 
+                    Giữa mùa hè năm 2019, mình bắt đầu gõ những dòng HTML và CSS đầu tiên trên VS Code Studio.
+                    Tự học lập trình Web, mình từng trải qua nhiều khoảnh khắc khó khăn của người tự học.
                     Mình sẽ chia sẻ thêm trong blog này các bạn hãy theo dõi nhé.</p>
             </div>
         </div>
@@ -63,48 +75,131 @@
             </div>
         </div>
     </section>
-    <section class="info-section">
-        <h2 class="info-title">Skills & Info</h2>
+    <section class="info-section" id="section2">
+        <h2 class="info-title">SKILLS & INFO</h2>
         <div class="row">
             <div class="col-6 info1">
-                <h5 class="oille">Oille</h5> <br>
-                <h5 class="kickflip">Kickflip</h5> <br>
-                <h5 class="heelflip">Heelflip</h5> <br>
-                <h5 class="fs">Frontside 180</h5> <br>
+                <h5 class="oille">Oille</h5>
+                <h5 class="kickflip">Kickflip</h5>
+                <h5 class="heelflip">Heelflip</h5>
+                <h5 class="fs">Frontside 180</h5>
                 <h5 class="bs">Backside 180</h5>
             </div>
             <div class="col-6 info2">
-               <div class="text1">
+                <div class="col-3 text1">
                     <h5>Age</h5>
-                    <p style="margin-left: 110px" class="text2">20</p>
-               </div>
-               <div class="text1">
                     <h5>Address</h5>
-                    <p style="margin-left: 80px" class="text2">Tuyen Quang City</p>
-               </div>
-               <div class="text1">
                     <h5>Blog</h5>
-                    <p style="margin-left: 109px" class="text2">KyleSB.com</p>
-               </div>
-               <div class="text1">
                     <h5>E-Mail</h5>
-                    <p style="margin-left: 95px" class="text2">kylesk8board@gmail.com</p>
-               </div>
-               <div class="text1">
                     <h5>Phone</h5>
-                    <p style="margin-left: 95px" class="text2">+84868341621</p>
-               </div>
-               <div class="text1">
                     <h5>Start skating</h5>
-                    <p class="text2">November 2017</p>
-               </div>
-               <div class="text1">
-                    <h5>Star coding</h5>
-                    <p style="margin-left: 60px" class="text2">2018</p>
-               </div>
+                </div>
+                <div class="col-4 text2">
+                    <p>20</p>
+                    <p>Tuyen Quang City</p>
+                    <p>KyleSB.com</p>
+                    <p>kylesk8board@gmail.com</p>
+                    <p>+84-868341621</p>
+                    <p>November 2017</p>
+                </div>
             </div>
         </div>
     </section>
+    <section class="quote-section">
+        <blockquote>
+            <img src="/resources/img/roytbennet.jpg" alt="RoyTBennet">
+            “You are unique. You have different talents and abilities. You don't have to always follow in the footsteps
+            of others.
+            And most important, you should always remind yourself that you don't have to do what everyone else is doing
+            and have a responsibility to develop the talents you have been given.”
+            <cite>Roy T. Bennett, The Light in the Heart</cite>
+        </blockquote>
+    </section>
+    <section class="sponsors-section">
+        <h2>SPONSORS</h2>
+        <div class="row">
+            <ul class="sponsors-showcase">
+                <li>
+                    <figure>
+                        <a href="https://www.vans.com/"><img class="logo-sponsor" src="./resources/img/vans.png"
+                                alt="vans"></a>
+                        <figcaption>VANS</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="https://www.thrashermagazine.com/"><img class="logo-sponsor"
+                                src="./resources/img/thrasher.jpg" alt="thrasher"></a>
+                        <figcaption>THRASHER MAGAZINE</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="https://independenttrucks.com/"><img class="logo-sponsor"
+                                src="./resources/img/independent.png" alt="independent"></a>
+                        <figcaption>INDEPENDENT TRUCK</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section" id="section3">
+        <h2>CONTACTS</h2>
+        <h4>Every message will be reply soon. Thanks !</h4>
+        <form>
+            <label>NAME</label>
+            <input type="text">
+            <label>EMAIL</label>
+            <input type="email">
+            <label>MESSAGE</label>
+            <textarea></textarea>
+            <div class="row">
+                <input type="submit" class="btn" value="SEND">
+            </div>
+        </form>
+    </section>
+    <section class="person-section">
+        <div class="row">
+            <div class="col-4">
+                <ul class="information">
+                    <li><i class="fas fa-mobile small-icon"></i>
+                        <h5>
+                            <span>Phone</span> <br>
+                            <span>0868-341-621</span>
+                        </h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="information">
+                    <li><i class="fas fa-map small-icon"></i>
+                        <h5>
+                            <span>Address</span> <br>
+                            <span>Hung Kieu 2, An Tuong District, Tuyen Quang City</span>
+                        </h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="information">
+                    <li><i class="fas fa-envelope small-icon"></i>
+                        <h5>
+                            <span>Email</span> <br>
+                            <span>kylesk8board@gmail.com</span>
+                        </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Copyright &copy; 2019 by KYLE
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/scripts.js"></script>
 </body>
+
 
 </html>
