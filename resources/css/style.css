@@ -46,13 +46,25 @@ html{
     display: table;
     clear: both;
 }
-.slogan{
+.caption{
+    font-size: 100%;
+    text-align: center;
+}
+#slogan{
     color: white;
     text-transform: uppercase;
     font-size: 200%;
     letter-spacing: 5px;
     word-spacing: 10px;
     text-align: center;
+}
+.type-cursor{ 
+    color:#fff; animation:blink .4s ease infinite;
+    opacity:0;
+    font-size: 200%;
+}
+@keyframes blink {
+    100% { opacity:1; }
 }
 .main-nav{
     float: right;
