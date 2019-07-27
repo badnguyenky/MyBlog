@@ -1,0 +1,446 @@
+/* -------DEFAULT SETTING------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    text-rendering: optimizeLegibility; 
+}
+
+/* section{
+    margin: 30px;
+} */
+.sticky{
+    background-color: rgba(76,154,42,.8);
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+}
+.sticky .logo{
+    width: 200px;
+    margin-top: -20px;
+}
+.sticky .main-nav{
+    margin-top: 20px;
+}
+/*------------HEADER-----------------*/
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+.logo{
+    width: 250px;
+    float: left;
+}
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.caption{
+    font-size: 100%;
+    text-align: center;
+}
+#slogan{
+    color: white;
+    text-transform: uppercase;
+    font-size: 200%;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-align: center;
+}
+.type-cursor{ 
+    color:#fff; animation:blink .4s ease infinite;
+    opacity:0;
+    font-size: 200%;
+}
+@keyframes blink {
+    100% { opacity:1; }
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+.main-nav li a{
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.main-nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    color: greenyellow;
+}
+.main-text{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.header-title{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: 100px;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.social{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 44%;
+    list-style: none;
+}
+.social li{
+    display: inline-block;
+}
+.social a{
+    margin: 0 5px;
+}
+.social-logo{
+    width: 30px;
+    transition: all .3s;
+}
+.social li .social-logo:hover,
+.social li .social-logo:active{
+   transform: scale(1.1);
+}
+header{
+    background-image: linear-gradient(rgb(76,154,42,0.8),rgb(172,223,135,0.85)), url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/* ------------ABOUT ME----------------- */
+
+.about-section{
+    margin-top: 30px;
+}
+.about-picture{
+    width: 90%;
+}
+.avatar{
+    width: 350px;
+    margin-left: 40%;
+    border-radius: 20px;
+    
+}
+.hello{
+    width: 70px;
+}
+.about-me-title{
+    text-align: left;
+}
+.text-sub1{
+    font-weight: 300;
+}
+.text-sub2{
+    font-weight: 300;
+}
+.about-me-title::after{
+    font-family: 'Lato',sans-serif;
+    content: " ";
+    display: block;
+    width: 490px;
+    height: 1px;
+    background-color: #ACDF87;
+}
+.p-long{
+    font-family: sans-serif;
+    margin-top: 20px;
+    width: 85%;
+    font-size: 100%;
+}
+.pic{
+    position: relative;
+}
+.pic img{
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 20px;
+    border: 4px solid #ACDF87;
+    box-shadow: 0px 5px 15px 5px #1E5631;
+    /* filter: blur(2px); */
+}
+.pic-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%,100%);
+    color: white;
+    transition: all .3s;
+    text-align: center;
+    opacity: 0;
+}
+.pic:hover .pic-title,
+.pic:active .pic-title{
+    transform: translate(-65%,-10%);
+    opacity: 1;
+}
+.pic:hover img,
+.pic:active img{
+    filter: blur(2px) brightness(55%);
+}
+
+/* ----------INFO SECTION------------ */
+.info-section{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+h2{
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+}
+/* p{
+    display: inline-block;
+} */
+.text1 h5{
+    line-height: 35px;  
+    text-transform: uppercase;
+}
+.text2 p{
+    font-size: 105%;
+    line-height: 35px;
+    margin-left: 30px;
+}
+.info1{
+    padding-left: 30px;
+}
+.info1, .info2{
+    padding-top: 30px;
+}
+.oille::after{
+    font-family: 'Lato',sans-serif;
+    content: " ";
+    display: block;
+    width: 490px;
+    height: 10px;
+    background-color: rgb(8, 97, 38);
+    margin-bottom: 10px; 
+}
+.kickflip::after{
+    font-family: 'Lato',sans-serif;
+    content: " ";
+    display: block;
+    width: 500px;
+    height: 10px;
+    background-color: #A4DE02;
+    margin-bottom: 10px; 
+}
+.heelflip::after{
+    font-family: 'Lato',sans-serif;
+    content: " ";
+    display: block;
+    width: 400px;
+    height: 10px;
+    background-color: #76BA1B;
+    margin-bottom: 10px; 
+}
+.fs::after{
+    font-family: 'Lato',sans-serif;
+    content: " ";
+    display: block;
+    width: 450px;
+    height: 10px;
+    background-color: #4C9A2A;
+    margin-bottom: 10px; 
+}
+.bs::after{
+    font-family: 'Lato',sans-serif;
+    content: " ";
+    display: block;
+    width: 460px;
+    height: 10px;
+    background-color: rgb(168, 255, 153);
+    margin-bottom: 10px; 
+}
+/* -----QUOTE---------- */
+.quote-section{
+    background-image: linear-gradient(rgb(76,154,42,0.8),rgb(172,223,135,0.85)), url(../img/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 50px;
+}
+blockquote{
+    font-style: italic;
+    color: white;
+    font-size: 130%;
+    text-align: center;
+    width: 80%;
+    vertical-align: center;
+    padding: 100px;
+    margin-left: 10%;
+}
+blockquote img{
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 45%;
+}
+cite{
+    font-style: normal;
+    color: greenyellow;
+    font-size: 80%;
+    display: block;
+    margin-top: 20px;
+}
+/* -----------SPONSORS SECTION---------- */
+/* .sponsors-section{
+    background-color: #f4f4f4;
+} */
+.sponsors-section h2{
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.logo-sponsor{
+    width: 150px;
+    border-radius: 80px;
+    transition: all .3s;
+}
+.sponsors-showcase{
+    margin-left: 8%;
+}
+.sponsors-showcase li{
+    list-style: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 70px;
+}
+figcaption{
+    color: #265077;
+    font-weight: 900;
+    font-size: 120%;
+}
+.sponsors-showcase li .logo-sponsor:hover,
+.sponsors-showcase li .logo-sponsor:active{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* --------------CONTACTS SECTION---------- */
+.contact-section h2{
+    padding-top: 30px;
+}
+.contact-section h4{
+    text-align: center;
+    font-weight: 400;
+}
+form{
+    text-align: center;
+}
+label{
+    display: block;
+    text-align: left;
+    margin-left: 30%;
+    font-size: 80%;
+    letter-spacing: 1px;
+}
+input, textarea{
+    font-size: 90%;
+    margin-bottom: 10px;
+    outline-color:  #A4DE02;
+    padding-right: 30%;
+    background-color: rgba(177, 177, 177, 0.2);
+    border: 1px solid rgba(177, 177, 177, 0.2);
+}
+input{
+    height: 30px;
+}
+input[type=submit]{
+    height: 50px;
+}
+textarea{
+    resize: none;
+    height: 100px;
+}
+input[value=SEND]{
+    font-weight: 600;
+}
+input[type=text], input[type=email], textarea{
+    width: 40%;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(61, 56, 56);
+    padding: 10px 40px;
+    border-radius: 10px;
+    transition: all .3s;
+    box-shadow: 0px 5px 15px 2px rgb(87, 124, 99);
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    background-color: white;
+}
+.btn:hover,
+.btn:active{
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+/* -------------PERSON SECTION----------- */
+.person-section{
+    background-image: linear-gradient(rgb(76,154,42,0.8),rgb(172,223,135,0.85)), url(../img/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    margin-top: 80px;
+}
+.information{
+    margin-top: 70px;
+}
+.small-icon:hover,
+.small-icon:active{
+    transform: scale(1.3);
+    color: greenyellow;
+}
+.small-icon{
+    color: rgb(250, 232, 232);
+    font-size: 150%;
+    transition: all .3s;
+    cursor: pointer;
+}
+.information li i{
+    margin-bottom: 20px;
+}
+.information li{
+    list-style: none;
+    text-align: center;
+}
+.information li h5 span:first-child{
+    color: white;
+    display: block;
+    margin-bottom: -10px;
+}
+.information li h5 span:last-child{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+/* --------FOOTER----------- */
+footer{
+    text-align: center;
+    background-color: #494949;
+    color: white;
+    padding: 15px;
+}
